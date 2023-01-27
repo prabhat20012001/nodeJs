@@ -1,0 +1,230 @@
+// const app=require('./app')
+// const arr=[2,3,5,6,7,8,3]
+
+const { fstat } = require("fs");
+
+// let result=arr.filter((item)=>{
+//     return item>5;
+// })
+
+// console.log(result)
+// const fs=require('fs');
+// fs.writeFileSync("hello.txt","like kro") 
+
+// const http=require('http');
+
+// const dataControl=(req,resp)=>
+// {
+//     resp.write("<h1>prabhat kumar sonu  ggggjhjsw</h1>");
+//     resp.end();
+// }
+
+// http.createServer(dataControl).listen(4500);
+// const colors=require('chalk');
+// console.log('package'.bgRed)
+
+// console.log("hello prabhat")
+// console.log([20,30])
+
+// const http=require('http');
+// const data=require('./data')
+
+// http.createServer((req,resp)=>{
+// resp.writeHead(200,{'content-Type':'application\json'})
+// resp.write(JSON.stringify(data))
+// resp.end()
+
+// }).listen(5000);
+
+// const fs=require('fs');
+// const input=process.argv;
+
+// if(input[2]=='add')
+// {
+//     fs.writeFileSync(input[3],input[4])
+
+// }
+// else if(input[2]=='remove')
+// {
+//     fs.unlinkSync(input[3])
+// }
+// else{
+//     console.log("Invalid input")
+
+// }
+
+//  FILE CREATION IN LOOP //
+
+// constconst fs=require('fs');
+// const path=require('path');
+
+//  dirPath=path.join(__dirname,'files');
+// console.log(dirPath)
+
+// for(i=0;i<5;i++)
+// {
+//     fs.writeFileSync(dirPath+"/hello"+i+".txt","a simple text file")
+// }  
+
+// LISTING  FILE //
+// const fs=require('fs');
+// const path=require('path');
+
+// const dirPath=path.join(__dirname,'files');
+// fs.readdir(dirPath,(err,files)=>{
+//     files.forEach((item)=>{
+//         console.log("file name is",item)
+//     })
+// })
+
+/// CRUD WITH FILE SYSTEM ///
+
+// MAKE FILE
+// READ FILE
+// UPDATE FILE
+// RENAME FILE
+//DELETE FILE
+
+// const fs=require("fs");
+// const path=require('path');
+// const app = require("./app");
+// const dirPath=path.join(__dirname,'crud');
+// const filePath=`${dirPath}/apple.txt`
+
+//  Create file
+//fs.writeFileSync(filePath,'This is a simple text file');
+
+// READ FILE
+// fs.readFile(filePath,'utf8',(err,item)=>{
+//     console.log(item)
+// })
+
+// Append File
+
+// fs.appendFile(filePath,'and file name is apple.txt',(err)=>{
+//     if(!err) console.log("file is updated")
+// })
+
+// Rename file
+
+// fs.rename(filePath,`${dirPath}/fruit.txt`,(err)=>{
+// if(!err) console.log("file name is updated")
+// })
+
+// Delete file
+
+// fs.unlinkSync(`${dirPath}/fruit.txt`)
+
+
+
+// BUFFER- temprory memory location 
+
+
+// SYNCHRONOUS-operations tasks are performed one at a time
+
+//  ASYNCHRONOUS-Second tasks do not wait to finish first task
+
+
+// console.log("first")
+
+// setTimeout( ()=>{
+//     console.log("second")
+// },2000)
+
+// console.log("third")
+
+
+//  HANDLE ASYNCHRONOUS DATA //
+
+// let a=20;
+// let b=0;
+
+// let waitingData=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve(30)
+//     },2000)
+// })
+
+// waitingData.then((data)=>{
+//     b=data;
+//     console.log(a+b)
+// })
+
+////////// HOW NODE JS WORKS ///////////
+
+// CALL STACK
+//NODE API
+//CALLBACK QUEUE
+
+
+
+
+/////////// EXPRESS JS ////////////
+
+
+// const express=require('express')
+// const app =express();
+
+// // root
+// app.get('',(req,res)=>{
+//     res.send('Hello ,this is Home Page')
+// });
+
+// //
+// app.get('/about',(req,res)=>{
+//     res.send('Hello ,this is About Page')
+// });
+
+// app.listen(5000);
+
+
+
+///////// RENDER HTML AND JSON /////
+// HOW HTML TAGS
+// SHOW JSON DATA
+// LINK PAGES
+
+// const express=require('express')
+// const app =express();
+
+
+// app.get('',(req,res)=>{
+//     res.send('<h1>Hello ,this is Home Page<h1>')
+// });
+// app.listen(5000);
+
+// app.get("/about",(req,res)=>{
+//     res.send(`
+//     <input type="text" placeholder="user name"/>
+//     <button>Click Me </button>
+
+//     `);
+// });
+// app.listen(5000);
+
+
+// app.get("/help",(req,res)=>{
+//     res.send([
+//         {
+//             name:"anil",
+//             age:'21'
+
+//         },
+//         {
+//             name:"anil",
+//             age:'21'
+
+//         }
+//     ]);
+// });
+// app.listen(5000);
+ 
+
+///////  MAKE FOLDER FOR HTML FILE AND ACCESS IT /////
+
+
+const express=require('express')
+const app =express();
+
+app.use(express.static(nodejs))
+app.listen(5000);
